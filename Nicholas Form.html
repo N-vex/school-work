@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+<style>
+  body{
+    background-image: url(https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?auto=compress&cs=tinysrgb&w=600);
+    margin: 0;
+   font-family: 'Lilita One', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Poppins', sans-serif;
+background-position: center;
+    background-size: cover;
+    width: 100%;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ 
+}
+
+.form-action{
+   position:relative;
+    width: 500px;
+    height: 800px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#name{
+    position:relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+#name label{
+    position: absolute;
+    top:50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+#name ~ label, 
+input:focus ~ label{
+    top: -5px;
+
+}
+#name input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border:none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.submit { 
+	position:relative;
+	left:130px;	
+    width: 40%;
+    height: 60px;
+    background: transparent;
+    border:none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 15px 0 5px;
+    color: #fff;	
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+ justify-content: center;
+ cursor: pointer;
+    align-items: center;	
+}
+</style>
+	
+		
+
+   <div class= "form-action">
+			<form action="Process.PHP"> 
+			<h2>Fill the below details</h2>		
+
+         		<label for="Name">First Name</label>
+
+			<input type="Name"= "Name"  id= "name" placeholder="First Name"><br>
+
+			 <label for="Name">Middle Name</label>
+
+			<input type="Name"= "Name" id= "name"  placeholder="Middle Name"><br>
+
+	 <label for="Name">Last Name</label>
+		<input type="Name"= "Name" id= "name" placeholder="Last Name"><br>
+
+	 <label for="Email">Email</label>
+		<input type="Email"= "Name" id= "name" placeholder="xxxxxxxxxx@gmail"><br>
+
+	 <label for="Address">Your Address</label>
+		<input type="Address"= "Address" id= "name" placeholder="Address"><br>
+	
+                                <label for="Phone number">Phone number</label>
+		<input type="Phone number"= "Phone number" id= "name" placeholder="+23409................82"><br>
+
+
+                                   <label for="Matrix number">Matrix number</label>
+		<input type="Matrix number"= "Matrix number" id= "name" placeholder="Matrix number"><br>
+
+                               <div class="submit">
+			<h3>Submit form</h3>
+		</div>
+	</form>	
+</div>
+
+            <style>
+  @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Lobster&family=Poppins:ital,wght@0,300;0,800;1,200;1,500;1,700&display=swap');
+</style>                     
+</body>
+</html>
